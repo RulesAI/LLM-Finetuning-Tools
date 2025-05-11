@@ -1,0 +1,54 @@
+# Python缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 日志文件
+*.log
+pipeline.log
+qa_generation.log
+quality_check.log
+fix_qa_pairs.log
+enhanced_cleaning.log
+
+# 输出目录
+output/
+output_*/
+filebak/
+
+# 临时文件
+processed_content*.txt
+enhanced_content.txt
+segmented_content.json
+
+# PDF文件（如果体积较大）
+*.pdf
+
+# 虚拟环境
+venv/
+env/
+ENV/
+
+# IDE配置
+.idea/
+.vscode/
+*.swp
+*.swo
