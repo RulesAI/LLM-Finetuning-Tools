@@ -1,10 +1,9 @@
-# Python缓存文件
+# Python编译文件
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -21,34 +20,51 @@ wheels/
 .installed.cfg
 *.egg
 
-# 日志文件
-*.log
-pipeline.log
-qa_generation.log
-quality_check.log
-fix_qa_pairs.log
-enhanced_cleaning.log
-
-# 输出目录
-output/
-output_*/
-filebak/
-
-# 临时文件
-processed_content*.txt
-enhanced_content.txt
-segmented_content.json
-
-# PDF文件（如果体积较大）
-*.pdf
-
 # 虚拟环境
-venv/
 env/
+venv/
 ENV/
+env.bak/
+venv.bak/
 
-# IDE配置
+# IDE相关
 .idea/
 .vscode/
 *.swp
 *.swo
+.DS_Store
+
+# 日志文件
+logs/
+*.log
+
+# 数据文件
+data/raw/
+data/processed/
+data/output/
+
+# 私密信息
+*.pem
+.env
+secrets.yaml
+
+# 备份文件
+backup/
+output-bak/
+filebak/
+*-bak/
+*.bak
+
+# 输出目录
+output*/
+
+# 测试覆盖率报告
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# API密钥配置
+# 注意：应该复制一份添加密钥后的配置到本地使用
+# src/config/config_local.yaml

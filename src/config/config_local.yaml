@@ -1,0 +1,48 @@
+# 模型配置
+models:
+  document_processing: "claude-3-opus"  # 文档清洗
+  topic_extraction: "gpt-4"            # 主题提取
+  qa_generation: "gpt-4"               # 问答生成
+  qa_enhancement: "claude-3-sonnet"    # 问答修复
+  relevance_evaluation: "gpt-3.5-turbo" # 相关性评估
+  semantic_segmentation: "claude-3-opus" # 语义分段
+
+# API密钥配置
+api_keys:
+  openai: "YOUR_OPENAI_API_KEY"
+  anthropic: "YOUR_ANTHROPIC_API_KEY"
+
+# 模型参数配置
+model_parameters:
+  temperature: 0.3
+  max_tokens: 1000
+
+# 数据处理配置
+data:
+  min_paragraph_length: 50
+  batch_size: 5
+  num_variants: 3
+  similarity_threshold: 0.9
+
+# 评估配置
+evaluation:
+  quality_threshold: 80
+  coverage_threshold: 0.7
+  minhash_permutations: 128
+  lsh_threshold: 0.3
+
+# 路径配置
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  output_data: "data/output"
+  logs: "logs"
+
+# 日志配置
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_handlers:
+    document: "logs/document/document.log"
+    qa: "logs/qa/qa.log"
+    evaluation: "logs/evaluation/evaluation.log" 
