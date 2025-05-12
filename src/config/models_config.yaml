@@ -1,0 +1,21 @@
+# 模型配置文件 - 每个处理环节的默认模型配置
+models:
+  document_processing: "gpt-4o"   # 文档清洗与结构化 (原为claude-3-7-sonnet-20250219)
+  topic_extraction: "gpt-4o"           # 主题提取
+  qa_generation: "gpt-4o"              # 问答生成
+  qa_enhancement: "gpt-4o"       # 问答修复 (原为claude-3-5-sonnet-20241022)
+  relevance_evaluation: "gpt-4o" # 相关性评估
+  semantic_segmentation: "gpt-4o" # 语义分段 (原为claude-3-7-sonnet-20250219)
+  content_enhancement: "gpt-4o"
+  knowledge_extraction: "gpt-4o"
+
+# 在此处填入您的API密钥
+api_keys:
+  openai: "YOUR_OPENAI_API_KEY"
+  anthropic: "YOUR_ANTHROPIC_API_KEY"
+  # 其他API密钥
+
+# 模型参数配置
+model_parameters:
+  temperature: 0.3
+  max_tokens: 4000 
